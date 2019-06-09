@@ -1,0 +1,1200 @@
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color: #f5f5f5;
+}
+#app{
+    max-width: 1650px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+#app .top{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#app header{
+    height: 70rem;
+    background: linear-gradient(-180deg,#0e1f35,#21455c);
+    position: relative;
+}
+
+/*@media (max-width: 375px) {*/
+    /*#app header{*/
+        /*height: 35rem;*/
+    /*}*/
+/*}*/
+
+#app header .stars{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    max-width: 320px;
+}
+
+#app header .cloud{
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 8.125rem;
+    height: auto;
+}
+/** 媒體查詢改變cloud大小 **/
+
+#app header .cloud_big{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+
+}
+
+#app header nav {
+    z-index: 99;
+    vertical-align: middle;
+}
+
+#app header nav .flex{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#app header nav .flex .text-red>img{
+    width: 130px;
+}
+#app header nav .flex .text-red>.logo-blue{
+  display: none;
+}
+#app header nav .flex .text-red>.img-kb{
+    width: 40px;
+    height: 28px;
+}
+#app header nav .flex .text-red>.kb-blue{
+    width: 40px;
+    height: 28px;
+    display: none;
+}
+
+/** 媒體查詢改變img大小 **/
+
+#app header nav .flex ul{
+    list-style: none;
+    display: inline-block;
+}
+
+#app header nav .flex div{
+    display: inline-block;
+}
+
+#app header nav .flex div ul li{
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#app header nav .flex div ul li:hover {
+    color: #6adaf7;
+}
+.svg-b{
+    display: none;
+}
+
+#app header nav .flex div button{
+    background: none;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    margin-left: 15px;
+}
+#app header nav .flex div button:hover{
+    background: red;
+    color: #fff;
+    border-color:red ;
+}
+#app header nav .flex .text-red{
+     line-height: 3rem;
+
+ }
+#app header nav .flex .text-red span{
+    font-size: 1rem;
+    background: red;
+    padding: 2px 4px 2px 0;
+    cursor: pointer;
+    color: #fff;
+}
+#app header nav .flex .text-red span:hover{
+    background: #ff6a6f;
+}
+#app header nav .flex .text-red i{
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-color:transparent red transparent transparent;
+    font-size: 0;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+#app header nav .flex .vertical>ul{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding:75px 0 0 0 ;
+    background: #fff;
+    width: 0;
+    overflow: hidden;
+}
+#app header nav .flex .vertical>ul .active{
+    border-top: 2px solid rgb(106, 218, 247);
+    border-bottom: 2px solid rgb(106, 218, 247);
+    color: #6adaf7;
+}
+#app header nav .flex .vertical button{
+    border: none;
+    padding: 0;
+}
+#app header nav .flex .vertical button img{
+    border: none;
+    width: 25px;
+    height: 30px;
+}
+#app header nav .flex .vertical>ul li{
+    display: block;
+    padding: 12px 35px;
+    color: #667482;
+    font-size: 2rem;
+}
+#app header nav .flex .vertical>ul img{
+    position: absolute;
+    top: 20px;
+    right:10px;
+    z-index: 2;
+    width: 10%;
+    height: auto;
+}
+#app header nav .flex>button{
+    background: none;
+    border: 2px solid white;
+    padding: 5px 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+.title{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.title .rocket{
+    width: 100px;
+    margin: 145px auto 35px;
+    height: auto;
+
+
+}
+.title .rocket img{
+    width: 100px;
+
+    margin: 0 auto;
+}
+.title h1{
+    color: #fff;
+    font-weight: bold;
+}
+.title>button{
+    border: 0;
+    border-bottom: 3px solid #ff272f;
+    border-radius: 5px;
+    color: #fff;
+    background: #ff5056;
+    font-size: 1.5rem;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+    margin-bottom: 110px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.title>button:hover{
+    background: #ff3c42;
+    border-color: #e90008;
+    color: #fff;
+}
+
+#app .img-banner{
+    height: 50px;
+}
+#app .img-banner>ul{
+    display: flex;
+    justify-content: space-between;
+}
+#app .img-banner>ul li{
+    display: inline-block;
+    max-width: 150px;
+}
+#app .img-banner>ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+#app>.container{
+    text-align: center;
+    margin: 50px auto 100px;
+}
+#app>.container>h2{
+    font-weight: bold;
+}
+#app>.container>.line{
+    max-width: 48px;
+    height: 45px;
+    display: block;
+    margin: 20px auto 0;
+    border-top: 2px  solid #30383f;
+}
+#app>.container>ul li{
+    position: relative;
+}
+#app>.container>ul li img{
+    width: 100%;
+
+}
+#app>.container>ul li .small-play{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    cursor: pointer;
+}
+#app>.container>ul li p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+#app>.container>button{
+    color: #ff5056;
+    background: #fff;
+    border: 3px solid #ff5056;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 300px;
+    height: 60px;
+    line-height: 52px;
+    font-weight: 600;
+}
+#app>.container>button:hover{
+    color: #fff;
+    background: red;
+}
+
+#app>.container .logo{
+    position: relative;
+    height: 47px;
+    margin-bottom: 10px;
+}
+#app>.container .logo span{
+    width: 100px;
+    margin: auto;
+    height: 2px;
+    display: inline-block;
+    background: #30383f;
+    vertical-align: top;
+}
+#app>.container .logo .line-left{
+    margin-right: 40px;
+}
+#app>.container .logo .line-right{
+    margin-left: 40px;
+}
+#app>.container .logo .img-logo{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    border-radius: 9999px;
+    background: #30383f url(https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/quote.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+#app>.container>.describe{
+    display: block;
+    font-size: 2rem;
+    color: #667482;
+    width: 75%;
+    margin: 0 auto 20px;
+    font-weight: 500;
+}
+#app>.container>img{
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+
+}
+#app>.container .name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#app>.container .e-mail{
+    font-size:2rem;
+    color: #667482;
+}
+.propaganda{
+}
+.star{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.star>img{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.star>img.go-left{
+    left: 0;
+}
+.star .star-small{
+    width: 300px;
+    margin: 0 auto;
+}
+.star .text-money{
+    width: 450px;
+}
+.star .right{
+    float: right;
+}
+.star .star-small>img{
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.star .text-money div{
+    height: 2px;
+    width:150px;
+    max-width: 200px;
+    background: #6adaf7;
+    display: inline-block;
+}
+.star .text-money h3{
+    color: #667482;
+    margin: 10px 0 0 0;
+}
+.star .text-money h2{
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.astronaut{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.astronaut>img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.astronaut .astronaut-small{
+    width: 300px;
+    margin: 0 auto;
+}
+.astronaut .astronaut-small>img{
+    width: 300px;
+    margin-top: 20px;
+}
+.astronaut .text-talent{
+    display: flex;
+    justify-content: flex-end;
+}
+.astronaut .text-talent .alignment-right{
+
+}
+.astronaut .text-talent .alignment-right div{
+    height: 2px;
+    width:150px;
+    max-width: 200px;
+    background: #6adaf7;
+    display: inline-block;
+}
+.astronaut .text-talent h3{
+    color: #667482;
+    margin: 10px 0 0 0;
+}
+.astronaut .text-talent h2{
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+
+.botany{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.botany>img{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.botany .botany-small{
+    width: 300px;
+    margin: 0 auto;
+}
+.botany .botany-small>img{
+    width: 300px;
+    margin-top: 20px;
+}
+.botany .text-fast div{
+    height: 2px;
+    width:150px;
+    max-width: 200px;
+    background: #6adaf7;
+    display: inline-block;
+}
+.botany .text-fast h3{
+    color: #667482;
+    margin: 10px 0 0 0;
+}
+.botany .text-fast h2{
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+#app .client{
+    width: 100%;
+    background: linear-gradient(-180deg,#0e1f35,#21455c);
+    text-align: center;
+}
+#app .client img:first-child{
+    width: 100%;
+    height:auto;
+    margin-top: -1px;
+}
+#app .client img:last-child{
+    width: 100%;
+    height:auto;
+    margin-bottom: -1px;
+}
+#app .client .center{
+    height: 120px;
+    vertical-align: middle;
+    margin-top: 20px;
+
+}
+#app .client .center h2{
+    margin: 0 0 25px 0;
+    color: #fff;
+    font-weight: 600;
+}
+#app .client .center>button{
+    color: #fff;
+    background: #ff5056;
+    border: 0;
+    border-bottom: 3px solid #ff5056;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 300px;
+    height: 60px;
+    line-height: 57px;
+    font-weight: 600;
+}
+
+#app .client .center>button:hover{
+    background: red;
+}
+
+
+
+#app footer{
+    width: 100%;
+    padding: 40px 16px;
+}
+#app footer .services{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+#app footer .services img{
+    width: 120px;
+    height: auto;
+ }
+#app footer .services ul{
+    padding: 0;
+}#app footer .services ul li{
+     margin-bottom: 14px;
+ }
+#app footer .services ul li a{
+    font-size: 12px;
+    color: #667482;
+    text-decoration: none;
+}
+#app footer .services ul li a:hover{
+    color: #6adaf7;
+}
+#app footer .services ul .titles{
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #667482;
+    font-size: 15px;
+}
+#app footer>.container>.line{
+    max-width: 680px;
+    height: 2px;
+    margin: 40px auto ;
+    background: #ced5dd;
+}
+
+#app footer .services .county>.orange-county{
+    display: inline-block;
+}
+#app footer .services .county{
+    max-width: 250px;
+    margin: 0 auto;
+}
+#app footer .services .county>.orange-county h3{
+    margin: 0 0 6px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+#app footer .services .county>.orange-county p{
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+}
+#app footer .services .county>.orange-county a{
+    font-size: 1rem;
+    color: #6adaf7;
+}
+#app footer .services .county>.orange-county a:hover{
+    color: #5dc0d9;
+}
+#app footer .services .county>img{
+    width: 80px;
+    vertical-align: top;
+    margin-right: 10px;
+
+}
+#app footer .sponsor{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+#app footer .sponsor .question{
+    max-width: 550px;
+    margin: 0 auto  40px;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+#app footer .sponsor .question div{
+    display: inline-block;
+
+}
+#app footer .sponsor .question div i{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 40px;
+    vertical-align: baseline;
+    color: #6adaf7;
+}
+#app footer .sponsor .question div h3{
+    margin: 0 0 6px 0 ;
+
+}
+#app footer .sponsor .question div p{
+    margin: 0;
+}
+#app footer .sponsor .question button{
+    width: 200px;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border-color: red;
+    background: #fff;
+    color: red;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+#app footer .sponsor .question button:hover{
+    background: #ff3c42;
+    border-color: #e90008;
+    color: #fff;
+
+}
+#app footer .sponsor>h3{
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+    color: #667482;
+    text-transform: uppercase;
+    min-width: 300px;
+}
+#app footer .sponsor>ul{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#app footer .sponsor>ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size:40px;
+}
+#app footer .sponsor>ul li a i{
+    font-size: 40px;
+    color: #6adaf7;
+}
+#app footer .sponsor>ul li a i:hover{
+    color: #ff5056;
+}
+#app footer .sponsor .img-trademark{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+#app footer .sponsor .img-trademark .goole{
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+
+#app footer .sponsor .img-trademark .bing{
+    width: 14rem;
+    height: 4rem;
+    margin-left: 20px;
+
+}
+
+
+#app footer .copyright{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #667482;
+}
+#app footer .terms{
+    text-align: center;
+}
+#app footer .terms a{
+    color: #667482;
+    font-size: 1rem;
+}
+#app footer .terms a:hover{
+    color: #6adaf7;
+}
+#app footer .terms span{
+    margin: 0 10px;
+    color: #667482;
+ }
+
+.floating{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.floating .face{
+    width: 60px;
+    height: 60px;
+    background: #3296FA;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+}
+.floating .face svg{
+    width: 28px;
+    height: 32px;
+    color: #fff;
+}
+.floating .customer-service{
+    width: 376px;
+    height: 550px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 5px 40px;
+    position: relative;
+    bottom:60px;
+    right: 10px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    display: none;
+}
+
+
+.floating .customer-service>.service{
+    width: 760px;
+    height: 100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;;
+   position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 5px 40px;
+}
+
+
+.floating .customer-service .service .service-left{
+    display: inline-block;
+    width: 376px;
+    height: 100%;
+
+}
+.floating .customer-service .service .service-left .service-left-top{
+    width: 100%;
+    height: 231px;
+    background: rgb(106, 218, 247) url(https://js.intercomcdn.com/images/background-4.122f4c2f.png);
+    background-size: 325px 323px,cover;
+    border-top-left-radius:10px;
+    padding: 24px 51px 87px 40px;
+    display: inline-block;
+}
+.floating .customer-service .service .service-left .service-left-top img{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+}
+.floating .customer-service .service .service-left .service-left-top h2,
+.floating .customer-service .service .service-left .service-left-top p{
+    margin: 0;
+    color: #fff;
+}
+.floating .customer-service .service .service-left .service-left-top p{
+    color: rgba(255, 255, 255, 0.7)
+}
+.floating .customer-service .service .service-left .service-left-down{
+    width: 100%;
+    height: 472px;
+    background: #fff;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.floating .customer-service .service .service-left .service-left-float{
+    width: 300px;
+    height: 110px;
+    box-sizing:content-box;
+    padding: 26px 24px 24px;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.1), inset 0 2px 0 0 rgba(106, 218, 247, 0.5);
+    background: #fff;
+    position: absolute;
+    top: 160px;
+    left: 15px;
+    z-index: 988;
+}
+
+.floating .customer-service .service .service-left .service-left-float h2{
+    color: #000;
+    font-size: 1.3rem;
+    margin: 0 0 5px 0 ;
+}
+.floating .customer-service .service .service-left-float p{
+    font-size: 1rem;
+    color: #737376;
+}
+.floating .customer-service .service .service-left .service-left-float div{
+    width: 300px;
+    height: 65px;
+}
+.floating .customer-service .service .service-left .service-left-float div img{
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+}
+.floating .customer-service .service .service-left .service-left-float div button {
+    width: 130px;
+    height: 40px;
+    padding: 0 24px;
+    box-sizing: content-box;
+    border-radius: 999px;
+    border: 0;
+    background: rgb(106, 218, 247);
+    color: #fff;
+    margin-left: 10px;
+}
+.floating .customer-service .service .service-left .service-left-float div button i{
+    font-size: 1rem;
+}
+.floating .customer-service .service .service-left .service-left-float div button:hover{
+    background: rgb(58, 206, 244)
+}
+
+.floating .customer-service .service .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}.floating .customer-service .service .close i{
+     font-size: 2rem;
+     color: #fff;
+ }
+.floating .customer-service .service .service-right{
+    display: inline-block;
+    width: 376px;
+    height: 100%;
+    margin-left: -4px;
+    vertical-align: top;
+    position: relative;
+
+}
+.floating .customer-service .service .service-right>i{
+    position: absolute;
+    top: 28px;
+    left:28px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 4;
+}
+.floating .customer-service .service .service-right .service-right-top{
+    width: 100%;
+    height: 231px;
+    background: rgb(106, 218, 247) url(https://js.intercomcdn.com/images/background-4.122f4c2f.png);
+    background-size: 325px 323px,cover;
+    padding: 24px 24px 0 75px;
+    border-top-right-radius:10px ;
+}
+
+.floating .customer-service .service .service-right .service-right-top h2{
+    margin: 0;
+    color: #fff;
+}
+.floating .customer-service .service .service-right .service-right-top>span{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+.floating .customer-service .service .service-right .service-right-top>div{
+    padding: 18px 0;
+}
+
+.floating .customer-service .service .service-right .service-right-top>div img{
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+}
+.floating .customer-service .service .service-right .service-right-top>div span{
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+.floating .customer-service .service .service-right .service-r-top{
+    width: 100%;
+    height:643px ;
+}
+.floating .customer-service .service .service-right .service-right-top p{
+    color: #fff;
+    font-size: 1rem;
+}
+.floating .customer-service .service .service-right .service-right-center {
+    width: 100%;
+    min-height: 412px;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    overflow-y: scroll;
+}
+.floating .customer-service .service .service-right .scroll-top{
+    position: absolute;
+    width: 100%;
+    height:80px;
+    padding: 20px 0 0 75px;
+    background: rgb(106, 218, 247) url(https://js.intercomcdn.com/images/background-4.122f4c2f.png);
+    background-size: 325px 323px,cover;
+    opacity: 0;
+    z-index: 3;
+    /*display: none;*/
+}
+.floating .customer-service .service .service-right .scroll-top img{
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    vertical-align: baseline;
+}
+.floating .customer-service .service .service-right .scroll-top div{
+    display: inline-block;
+}.floating .customer-service .service .service-right .scroll-top div span{
+     color: #fff;
+     font-size: 1.5rem;
+ }
+.floating .customer-service .service .service-right .scroll-top div p{
+    font-size: 1rem;
+    color:  rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+.floating .customer-service .service .service-right .service-right-down input{
+    width: 100%;
+    height: 60px;
+    padding: 18px 100px 18px 30px;
+    position: absolute;
+    bottom: 0;
+    border: 0;
+    border-top: 2px solid rgb(230, 230, 230);
+}
+.floating .customer-service .service .service-right .service-right-down>i{
+    position: absolute;
+}
+.floating .customer-service .service .service-right .service-right-down .gif{
+    bottom: 18px;
+    right: 100px;
+    font-size: 20px;
+}
+.floating .customer-service .service .service-right .service-right-down .icon-face{
+    bottom: 18px;
+    right: 60px;
+    background:0;
+    font-size: 20px;
+}
+.floating .customer-service .service .service-right .service-right-down .clip{
+    bottom: 18px;
+    right: 20px;
+    font-size: 20px;
+}
+
+
+
+
+#app #location{
+    background: #fff;
+}
+#app #location .container .row .text-right ul li{
+    color:#667482;
+}
+#app #location .container .row .text-right ul li:hover{
+    color: #30383f;
+}
+#app #location .container .row .text-right>button{
+    color: red ;
+    border-color: red ;
+}
+#app #location .container .row .flex>button{
+    color:red ;
+    border-color: red;
+}
+#app #location .container .row .flex>button:hover{
+    color: #fff;
+    background: red;
+}
+#app #location .container .row .flex .text-right>button:hover{
+    color: #fff;
+    background: red;
+}
+#app #location .container .row .flex .text-red>.logo-white{
+    display: none;
+}
+#app #location .container .row .flex .text-red>.logo-blue{
+    display: inline-block;
+}
+#app #location .container .row .flex .text-red>.img-kb{
+    display: none;
+}
+#app #location .container .row .flex .text-red>.kb-blue{
+    display: inline-block ;
+}
+#app #location .container .row .flex .vertical>button .svg-w{
+    display: none;
+}
+#app #location .container .row .flex .vertical>button .svg-b{
+    display: inline-block;
+}
+
+
+
+@media (max-width: 1200px) {
+    #app header nav .flex div ul li{
+        padding: 0 5px;
+        font-size: 1.2rem;
+    }
+    .star{
+        height: 500px;
+    }
+    .astronaut{
+        height: 500px;
+    }
+    .star .go-left{
+        left: -100px !important;
+    }
+    .botany{
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    #app header nav .flex .text-red>img{
+        width: 100px;
+    }
+    .star{
+        background-size: 50%;
+    }
+    .astronaut{
+        background-size: 50%;
+    }
+    .botany{
+        background-size: 50%;
+    }
+    .star{
+        height: 500px;
+    }
+    .botany{
+        height: 400px;
+    }
+    .astronaut{
+        height: 400px;
+    }
+
+
+}
+@media (max-width: 767px) {
+    .title h1{
+      font-size: 2rem;
+    }
+    .star{
+        height: 400px;
+    }
+    .astronaut{
+        height: 400px;
+    }
+    .star .text-money{
+        text-align: center;
+    }
+    .star .text-money h2{
+        font-size: 1.5rem;
+    }
+    .star .text-money h3{
+        font-size: 1.5rem;
+    }
+    .astronaut .text-talent{
+        justify-content: center;
+    }
+
+    /*.astronaut .text-talent{*/
+        /*text-align: center;*/
+    /*}*/
+    .astronaut .text-talent h2{
+        font-size: 1.5rem;
+    }
+    .astronaut .text-talent h3{
+        font-size: 1.5rem;
+    }
+    .botany{
+        background: none;
+        height: 400px;
+    }
+
+    .star .right{
+        float: none;
+    }
+    .botany .text-fast{
+        text-align: center;
+    }
+    .botany .text-fast h2{
+        font-size: 1.5rem;
+    }
+    .botany .text-fast h3{
+        font-size: 1.5rem;
+    }
+    #app footer .services>div{
+        margin: 0 auto;
+        text-align: center;
+    }
+    #app footer .services div img{
+
+        margin: 0 0 48px 0;
+    }
+
+    #app footer .services ul div{
+        width: 220px;
+        margin: 0 auto;
+    }
+
+
+}
+@media (max-width: 576px) {
+    #app header{
+        height:60rem;
+    }
+    #app .client .center h2{
+     font-size: 2rem;
+    }
+    #app .client .center button{
+        font-size: 1.5rem;
+    }
+    #app footer .sponsor .question>div{
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    #app footer .sponsor .question button{
+        display: block;
+        margin: 20px auto 0;
+    }
+    .title .rocket{
+        margin-top: 120px;
+    }
+    #app>.container>.describe{
+        font-size: 1.5rem;
+    }
+    #app>.container .e-mail {
+        font-size: 1.5rem;
+    }
+    #app header nav .flex .vertical>ul li{
+        font-weight: normal;
+        font-size: 1.5rem;
+
+    }
+
+}
+
